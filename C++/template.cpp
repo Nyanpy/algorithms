@@ -6,7 +6,7 @@ typedef unsigned long long ull;
 typedef pair<ll, ll> P;
 
 int main(){
-  
-  
-  return 0;
+    
+    
+    return 0;
 }
