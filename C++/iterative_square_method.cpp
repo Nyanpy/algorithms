@@ -6,7 +6,7 @@ typedef pair<ll,ll> P;
 #define MOD 1000000007
 
 int modPow(ll a, ll n) {
-  if (n == 0) return 1; // 0乗にも対応する場合
+  if (n == 0) return 1;
   if (n == 1) return a % MOD;
   if (n % 2 == 1) return (a * modPow(a, n - 1)) % MOD;
   ll t = modPow(a, n / 2);
