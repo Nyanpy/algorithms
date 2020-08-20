@@ -26,7 +26,7 @@ int bfs(vector<P> input, P s, P g){
     
     queue<P> q;
     q.push(s);
-    check[s.first][s.second] = 1;
+    //check[s.first][s.second] = 1;
     
     while(!q.empty()) {
         P tmp = q.front();
