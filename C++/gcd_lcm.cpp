@@ -22,12 +22,12 @@ int main(){
   ll a, b;
   cin >> a >> b;
   // 最大公約数を求める
-  ll gcd = gcd(a, b);
+  ll gcd_v = gcd(a, b);
   // 最小公倍数を求める
-  ll lcm = lcm(a, b);
+  ll lcm_v = lcm(a, b);
   
-  cout << gcd << endl;
-  cout << lcm << endl;
+  cout << gcd_v << endl;
+  cout << lcm_v << endl;
   
   return 0;
 }
