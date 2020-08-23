@@ -26,12 +26,12 @@ int bfs(vector<P> input, P s, P g){
     
     queue<P> q;
     q.push(s);
-    //check[s.first][s.second] = 1;
+    d[s.first][s.second] = 1;
     
     while(!q.empty()) {
         P tmp = q.front();
         q.pop();
-        if (tmp.first == g.first && tmp.second = g.second) break;
+        if (tmp.first == g.first && tmp.second == g.second) break;
         for (int i = 0; i < 4; i++) {
             int x = tmp.first + dx[i];
             int y = tmp.second + dy[i];
@@ -47,7 +47,7 @@ int bfs(vector<P> input, P s, P g){
 
 int main(void){
     start_up();
-    cin >> m >> n;
+    cin >> n >> m;
     
     // 島、もしくは迷路の地形を2次元配列でinputする
     vector<vector<int>> input(n, vector<int>(m));
